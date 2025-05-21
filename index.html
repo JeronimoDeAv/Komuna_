@@ -71,17 +71,25 @@
       background-color: #91c8b5;
       color: #324c5f;
     }
-    form input[type="email"] {
+    form input, form select {
+      width: 100%;
       padding: 10px;
-      width: 60%;
-      margin-right: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
     form button {
-      padding: 10px;
-      background: #324c5f;
+      background-color: #324c5f;
       color: white;
+      padding: 10px 20px;
       border: none;
+      border-radius: 30px;
       cursor: pointer;
+    }
+    form button:hover {
+      background-color: #91c8b5;
+      color: #324c5f;
     }
     footer {
       background-color: #324c5f;
@@ -192,8 +200,45 @@
     </form>
   </section>
 
+  <section class="section" id="pedido">
+    <h2>Haz tu pedido</h2>
+    <p>Llena el siguiente formulario para realizar la compra de tu pulsera Komuna. </p>
+    <form onsubmit="return fakeOrder();">
+      <label for="nombre">Nombre completo:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="direccion">Dirección:</label><br>
+      <input type="text" id="direccion" name="direccion" required><br><br>
+
+      <label for="modelo">Modelo:</label><br>
+      <select id="modelo" name="modelo">
+        <option value="standard">Standard</option>
+        <option value="plus">Plus</option>
+        <option value="morado">Morado edición lucha</option>
+      </select><br><br>
+
+      <label for="pago">Método de pago:</label><br>
+      <select id="pago" name="pago">
+        <option value="nequi">Nequi</option>
+        <option value="daviplata">Daviplata</option>
+        <option value="efectivo">Efectivo contra entrega</option>
+      </select><br><br>
+
+      <button type="submit">Pedir ahora</button>
+    </form>
+    <p id="mensajePedido" style="color: green; margin-top: 1rem;"></p>
+  </section>
+
   <footer>
     <p>&copy; 2025 Komuna. Todos los derechos reservados.</p>
   </footer>
+
+  <script>
+    function fakeOrder() {
+      const nombre = document.getElementById("nombre").value;
+      document.getElementById("mensajePedido").innerText = `¡Gracias, ${nombre}! Tu pedido ha sido registrado. Nos pondremos en contacto pronto.`;
+      return false;
+    }
+  </script>
 </body>
 </html>
