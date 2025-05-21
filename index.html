@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Komuna | No estás solo, nosotros te acompañamos</title>
   <style>
     body {
       margin: 0;
@@ -57,6 +56,33 @@
       margin-top: 0;
       color: #324c5f;
     }
+    .cta-button {
+      display: inline-block;
+      background-color: #324c5f;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+      margin-top: 1rem;
+    }
+    .cta-button:hover {
+      background-color: #91c8b5;
+      color: #324c5f;
+    }
+    form input[type="email"] {
+      padding: 10px;
+      width: 60%;
+      margin-right: 10px;
+    }
+    form button {
+      padding: 10px;
+      background: #324c5f;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
     footer {
       background-color: #324c5f;
       color: white;
@@ -68,6 +94,10 @@
       .features {
         grid-template-columns: 1fr;
       }
+      form input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
@@ -76,6 +106,7 @@
     <img src="logo.jpg" alt="Logo Komuna" style="height: 60px; margin-bottom: 1rem;">
     <h1>Komuna</h1>
     <p>No estás solo, nosotros te acompañamos</p>
+    <a href="#descargar" class="cta-button">Únete a Komuna</a>
   </header>
 
   <section class="section">
@@ -94,8 +125,8 @@
         <p>Correa ergonómica, display circular y materiales resistentes para uso diario.</p>
       </div>
       <div class="feature">
-        <h3>Seguridad y Confianza</h3>
-        <p>El azul y algunas tonalidades mezcladas con verde, asociados en la psicología del color a seguridad, confianza y tecnología. </p>
+        <h3>Símbolo de Lucha</h3>
+        <p>El morado representa la lucha contra la violencia de género. Komuna visibiliza tu voz.</p>
       </div>
       <div class="feature">
         <h3>Compromiso Ambiental</h3>
@@ -104,9 +135,65 @@
     </div>
   </section>
 
+  <section class="section">
+    <h2>¿Por qué Komuna?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>87%</h3>
+        <p>de mujeres han sufrido violencia sexual en el transporte público de Bogotá.</p>
+      </div>
+      <div class="feature">
+        <h3>+60%</h3>
+        <p>de víctimas no denuncian los hechos a las autoridades.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Lo que dicen nuestras usuarias</h2>
+    <div class="features">
+      <div class="feature">
+        <p>“Desde que uso Komuna me siento más segura al volver a casa en la noche.”</p>
+        <strong>- Laura M., estudiante</strong>
+      </div>
+      <div class="feature">
+        <p>“Es más que una pulsera, es saber que alguien está cerca si algo pasa.”</p>
+        <strong>- Camila G., ciclista urbana</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>App integrada, comunidad activa</h2>
+    <p>Desde tu celular puedes activar la red, gestionar tu grupo de apoyo y acceder a reportes en tiempo real.</p>
+    <img src="mockup_app.png" alt="Interfaz App Komuna" class="product-img">
+  </section>
+
+  <section class="section">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>¿Funciona sin conexión?</h3>
+        <p>La alerta visible y sonora funciona incluso sin internet. La alerta comunitaria requiere datos o WiFi.</p>
+      </div>
+      <div class="feature">
+        <h3>¿Cómo se recarga?</h3>
+        <p>La batería dura hasta 7 días y se recarga vía USB-C en menos de una hora.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="descargar">
+    <h2>Únete a Komuna</h2>
+    <p>Déjanos tu correo para recibir noticias del lanzamiento.</p>
+    <form>
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
   <footer>
     <p>&copy; 2025 Komuna. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
-
