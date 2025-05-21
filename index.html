@@ -9,11 +9,11 @@
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
-      color: #333;
+      color: #324c5f;
     }
     header {
-      background-color: #6a1b9a;
-      color: white;
+      background-color: #91c8b5;
+      color: #324c5f;
       padding: 2rem;
       text-align: center;
     }
@@ -30,7 +30,7 @@
       margin: auto;
     }
     .highlight {
-      color: #6a1b9a;
+      color: #91c8b5;
       font-weight: bold;
     }
     .product-img {
@@ -38,21 +38,27 @@
       max-width: 500px;
       display: block;
       margin: 2rem auto;
+      border-radius: 12px;
     }
     .features {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
       margin-top: 2rem;
     }
     .feature {
       background: white;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid #91c8b5;
+    }
+    .feature h3 {
+      margin-top: 0;
+      color: #324c5f;
     }
     footer {
-      background-color: #333;
+      background-color: #324c5f;
       color: white;
       text-align: center;
       padding: 1rem;
@@ -67,6 +73,7 @@
 </head>
 <body>
   <header>
+    <img src="/mnt/data/logo.jpg" alt="Logo Komuna" style="height: 60px; margin-bottom: 1rem;">
     <h1>Komuna</h1>
     <p>No estás solo, nosotros te acompañamos</p>
   </header>
@@ -75,24 +82,24 @@
     <h2>Una pulsera. Una comunidad.</h2>
     <p>Komuna es más que un dispositivo. Es una red de apoyo diseñada para proteger, conectar y empoderar a quienes se sienten vulnerables en su camino diario. Con <span class="highlight">alertas comunitarias</span>, <span class="highlight">luz visible</span> y <span class="highlight">sonido ultrasónico</span>, Komuna te acompaña siempre.</p>
 
-    <img src="https://via.placeholder.com/500x300?text=Pulsera+Komuna" alt="Pulsera Komuna" class="product-img">
+    <img src="/mnt/data/image.png" alt="Pulseras Komuna" class="product-img">
 
     <div class="features">
       <div class="feature">
         <h3>Alerta Comunitaria</h3>
-        <p>Conecta con personas cercanas en caso de emergencia.</p>
+        <p>Conecta con personas cercanas en caso de emergencia y activa una red de protección colectiva.</p>
       </div>
       <div class="feature">
         <h3>Diseño Seguro</h3>
-        <p>Correa cómoda con display circular y materiales resistentes.</p>
+        <p>Correa ergonómica, display circular y materiales resistentes para uso diario.</p>
       </div>
       <div class="feature">
         <h3>Símbolo de Lucha</h3>
-        <p>Usamos el morado como emblema contra la violencia hacia la mujer.</p>
+        <p>El morado representa la lucha contra la violencia de género. Komuna visibiliza tu voz.</p>
       </div>
       <div class="feature">
-        <h3>100% Reciclable</h3>
-        <p>Empaque sostenible alineado con nuestros valores de cuidado.</p>
+        <h3>Compromiso Ambiental</h3>
+        <p>Diseño reciclable con empaque ecológico que respeta nuestro entorno.</p>
       </div>
     </div>
   </section>
@@ -102,3 +109,4 @@
   </footer>
 </body>
 </html>
+
